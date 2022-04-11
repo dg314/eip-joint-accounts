@@ -102,10 +102,9 @@ interface IERC20Metadata is IERC20 {
 }
 
 /**
- * Interface for an ERC-20 token that allows groups of addresses to control
- * the same token balance.
+ * Interface for an ERC-20 token with joint accounts.
  */
-interface IERC20Shared is IERC20, IERC20Metadata {
+interface IERC20JointAccounts is IERC20, IERC20Metadata {
     /**
      * @dev Emitted when `balanceHolder` shares balance access to `account`.
      */
