@@ -6,7 +6,7 @@ import "./IERC20JointAccounts.sol";
 /**
  * ERC-20 token with joint accounts.
  */
-contract ERC20 is IERC20JointAccounts {
+contract ERC20JointAccounts is IERC20JointAccounts {
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
 
@@ -56,7 +56,7 @@ contract ERC20 is IERC20JointAccounts {
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
-     * Emits a {BalanceAccessShares} event.
+     * Emits a {BalanceAccessShared} event.
      *
      * Requirements:
      *
@@ -79,7 +79,7 @@ contract ERC20 is IERC20JointAccounts {
      * Returns a boolean value indicating whether the operation succeeded.
      *
      * Emits a {BalanceAccessRevoked} event.
-     * May emit an {ActiveBalanceHolderUpdate} event.
+     * May emit an {ActiveBalanceHolderUpdated} event.
      *
      * Requirements:
      *
@@ -124,7 +124,7 @@ contract ERC20 is IERC20JointAccounts {
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
-     * Emits an {ActiveBalanceHolderUpdate} event.
+     * Emits an {ActiveBalanceHolderUpdated} event.
      *
      * Requirements:
      *
