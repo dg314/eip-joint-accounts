@@ -1,13 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "./IERC20Shared.sol";
+import "./IERC20JointAccounts.sol";
 
 /**
- * ERC-20 token that allows groups of addresses to control the same 
- * token balance.
+ * ERC-20 token with joint accounts.
  */
-contract ERC20Shared is IERC20Shared {
+contract ERC20 is IERC20JointAccounts {
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
 
@@ -33,7 +32,7 @@ contract ERC20Shared is IERC20Shared {
      * @dev Returns the name of the token.
      */
     function name() public pure override returns (string memory) {
-        return "ERC-20 Shared";
+        return "ERC-20 Joint Accounts";
     }
 
     /**
@@ -41,7 +40,7 @@ contract ERC20Shared is IERC20Shared {
      * name.
      */
     function symbol() public pure override returns (string memory) {
-        return "ERCS";
+        return "ERCJA";
     }
 
     /**
