@@ -126,7 +126,7 @@ interface IERC20JointAccounts is IERC20, IERC20Metadata {
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
-     * Emits a {BalanceAccessShares} event.
+     * Emits a {BalanceAccessShared} event.
      *
      * Requirements:
      *
@@ -141,7 +141,7 @@ interface IERC20JointAccounts is IERC20, IERC20Metadata {
      * Returns a boolean value indicating whether the operation succeeded.
      *
      * Emits a {BalanceAccessRevoked} event.
-     * May emit an {ActiveBalanceHolderUpdate} event.
+     * May emit an {ActiveBalanceHolderUpdated} event.
      *
      * Requirements:
      *
@@ -166,7 +166,7 @@ interface IERC20JointAccounts is IERC20, IERC20Metadata {
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
-     * Emits an {ActiveBalanceHolderUpdate} event.
+     * Emits an {ActiveBalanceHolderUpdated} event.
      *
      * Requirements:
      *
