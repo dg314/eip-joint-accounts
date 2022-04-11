@@ -9,7 +9,7 @@ A joint bank account allows two or more people to deposit, withdraw, and transfe
 Currently, a user must distribute their private key to share access to their ERC-20 balance without transferring it. Additionally, a single address cannot control distinct balances shared with different groups. ERC-xxxx extends the ERC-20 standard to implement a system of joint accounts that solves both of these problems.
 
 ## Overview
-- ERC-XXXX is backward compatible with ERC-20.
+- ERC-xxxx is backward compatible with ERC-20.
 - A user can share access to their address's balance with any number of other addresses.
 - A user can revoke another address's access to the user's balance at any time.
 - A user can have access to any positive number of balances.
