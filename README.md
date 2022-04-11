@@ -11,7 +11,7 @@ Currently, a user must distribute their private key to share access to their ERC
 ## Overview
 - ERC-xxxx is backward compatible with ERC-20.
 - A user can share access to their address's balance with any number of other addresses.
-- A user can revoke another address's access to the user's balance at any time.
+- A user can revoke access to their address's balance from another address at any time.
 - A user can have access to any positive number of balances.
 - A user always has access to their own balance.
 - A user can set their active balance holder to their own address or any address that they have balance access to.
