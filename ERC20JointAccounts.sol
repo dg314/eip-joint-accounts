@@ -16,12 +16,6 @@ contract ERC20 is IERC20JointAccounts {
     uint256 private _totalSupply;
 
     /**
-     * @dev Emitted when `account` requests membership in the group with ID
-     * `id`.
-     */
-    event MembershipRequest(uint256 indexed id, address indexed account);
-
-    /**
      * @dev Mints ERC-20 Shared with fixed `supply`.
      */
     constructor(uint256 supply) {
